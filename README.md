@@ -1,7 +1,7 @@
 # UI-2
 UI 2 Repo
 
-#Fonts Used
+## Fonts Used
 
 Google Fonts
 - Raleway
@@ -9,7 +9,7 @@ Google Fonts
 
 https://fonts.google.com/
 
-#Icons
+## Icons
 
 UnDraw
 

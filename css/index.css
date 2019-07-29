@@ -304,8 +304,12 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 3rem 0;
+  align-content: center;
+  padding: 6rem 0;
   background: #97D1FD;
+}
+.completeSection .completeMainTextContainer {
+  width: 100%;
 }
 .completeSection .completeMainTextContainer h2 {
   text-align: center;

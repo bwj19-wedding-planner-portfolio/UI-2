@@ -15,6 +15,24 @@
 		justify-content: space-between;
 		align-items: center;
 
+		// Mobile Styles
+		@media @mobile {
+			flex-wrap: wrap;
+
+			a{
+				width: 100%;
+				display: flex;
+				justify-content: center;
+			}
+
+			.navItems{
+				width: 100%;
+				margin-top: 1rem;
+			}
+
+		}
+
+		// Name Styling
 		a {
 
 			h1{
@@ -25,6 +43,7 @@
 
 		}
 
+		// Nav Item styling
 		nav{
 			// border: 2px solid orange;
 

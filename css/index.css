@@ -147,6 +147,11 @@ html {
   max-width: 95rem;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 45rem;
+  }
+}
 h1,
 h2,
 h3,
@@ -176,6 +181,23 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 500px) {
+  #navContainer div {
+    flex-wrap: wrap;
+  }
+  #navContainer div a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #navContainer div .navItems {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  #navContainer div .navItems a {
+    font-size: 1.5rem;
+  }
 }
 #navContainer div a h1 {
   font-size: 3rem;
@@ -231,6 +253,27 @@ a {
 }
 .header .container .imageContainer img {
   max-width: 100%;
+}
+@media (max-width: 500px) {
+  .header {
+    height: 80vh;
+  }
+  .header .container {
+    flex-wrap: wrap;
+    margin-top: 5rem;
+  }
+  .header .container .headerTextContainer {
+    width: 100%;
+  }
+  .header .container .headerTextContainer h2 {
+    text-align: center;
+  }
+  .header .container .headerTextContainer p {
+    text-align: center;
+  }
+  .header .container .imageContainer {
+    width: 100%;
+  }
 }
 .plannerSection {
   background: #97D1FD;
@@ -295,6 +338,36 @@ a {
   font-size: 2rem;
   line-height: 1.5;
 }
+@media (max-width: 500px) {
+  .plannerSection,
+  .userSection {
+    height: 50vh;
+  }
+  .plannerSection .plannerContentContainer,
+  .userSection .plannerContentContainer,
+  .plannerSection .userContentContainer,
+  .userSection .userContentContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .plannerSection .plannerContentContainer .plannerImageContainer,
+  .userSection .plannerContentContainer .plannerImageContainer,
+  .plannerSection .userContentContainer .plannerImageContainer,
+  .userSection .userContentContainer .plannerImageContainer,
+  .plannerSection .plannerContentContainer .userImageContainer,
+  .userSection .plannerContentContainer .userImageContainer,
+  .plannerSection .userContentContainer .userImageContainer,
+  .userSection .userContentContainer .userImageContainer {
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+  .plannerSection .plannerContentContainer p,
+  .userSection .plannerContentContainer p,
+  .plannerSection .userContentContainer p,
+  .userSection .userContentContainer p {
+    display: none;
+  }
+}
 .userSection {
   background: #FA80AF;
   height: 63vh;
@@ -330,6 +403,19 @@ a {
   font-size: 2.5rem;
   width: 45%;
   line-height: 1.5;
+}
+@media (max-width: 500px) {
+  .completeSection .completeContentContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .completeSection .completeContentContainer .completeImageContainer {
+    width: 80%;
+  }
+  .completeSection .completeContentContainer p {
+    width: 100%;
+    text-align: center;
+  }
 }
 footer {
   padding: 3rem 0;

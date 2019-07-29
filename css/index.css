@@ -188,11 +188,42 @@ a {
   color: black;
   padding: 1rem;
   border-radius: 1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
 }
 #navContainer div nav a:hover {
   background: #FA80AF;
   color: white;
 }
 .header {
-  padding-top: 8rem;
+  display: flex;
+  padding-top: 9rem;
+  background: #DCB5F9;
+  height: 50vh;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .container .headerTextContainer {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header .container .headerTextContainer h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.header .container .headerTextContainer p {
+  font-size: 2rem;
+}
+.header .container .imageContainer {
+  width: 48%;
+}
+.header .container .imageContainer img {
+  max-width: 100%;
 }

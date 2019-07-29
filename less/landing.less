@@ -1,0 +1,67 @@
+
+.plannerSection{
+	background: @blue;
+}
+
+// Planner and User Sections
+.plannerSection,
+.userSection{
+
+	height: 50vh;
+	padding: 3rem 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	// Planner & User Section Text
+	.plannerMainTextContainer,
+	.userMainTextContainer{
+		h2{
+			font-size: 3rem;
+			font-weight: bold;
+			text-align: center;
+		}
+
+		p{
+			margin-top: 3rem;
+			margin-bottom: 4rem;
+			font-size:2.5rem;
+			text-align: center;
+		}
+
+	}
+
+	// Planner & User Section Content
+	.plannerContentContainer,
+	.userContentContainer{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.plannerImageContainer,
+		.userImageContianer {
+			
+			width: 50%;
+
+			img{
+				max-width: 100%;
+			}
+
+		}
+
+		p{
+			width: 45%;
+			font-size: 2rem;
+			line-height: 1.5;
+		}
+		
+	}
+}
+
+.userSection{
+	background: @pink;
+	height: 63vh;
+}
+
+// What Are You Waiting For Section

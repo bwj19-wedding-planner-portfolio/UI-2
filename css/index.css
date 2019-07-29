@@ -219,11 +219,81 @@ a {
   margin-bottom: 2rem;
 }
 .header .container .headerTextContainer p {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  line-height: 1.5;
 }
 .header .container .imageContainer {
   width: 48%;
 }
 .header .container .imageContainer img {
   max-width: 100%;
+}
+.plannerSection {
+  background: #97D1FD;
+}
+.plannerSection,
+.userSection {
+  height: 50vh;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.plannerSection .plannerMainTextContainer h2,
+.userSection .plannerMainTextContainer h2,
+.plannerSection .userMainTextContainer h2,
+.userSection .userMainTextContainer h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+.plannerSection .plannerMainTextContainer p,
+.userSection .plannerMainTextContainer p,
+.plannerSection .userMainTextContainer p,
+.userSection .userMainTextContainer p {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.plannerSection .plannerContentContainer,
+.userSection .plannerContentContainer,
+.plannerSection .userContentContainer,
+.userSection .userContentContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.plannerSection .plannerContentContainer .plannerImageContainer,
+.userSection .plannerContentContainer .plannerImageContainer,
+.plannerSection .userContentContainer .plannerImageContainer,
+.userSection .userContentContainer .plannerImageContainer,
+.plannerSection .plannerContentContainer .userImageContianer,
+.userSection .plannerContentContainer .userImageContianer,
+.plannerSection .userContentContainer .userImageContianer,
+.userSection .userContentContainer .userImageContianer {
+  width: 50%;
+}
+.plannerSection .plannerContentContainer .plannerImageContainer img,
+.userSection .plannerContentContainer .plannerImageContainer img,
+.plannerSection .userContentContainer .plannerImageContainer img,
+.userSection .userContentContainer .plannerImageContainer img,
+.plannerSection .plannerContentContainer .userImageContianer img,
+.userSection .plannerContentContainer .userImageContianer img,
+.plannerSection .userContentContainer .userImageContianer img,
+.userSection .userContentContainer .userImageContianer img {
+  max-width: 100%;
+}
+.plannerSection .plannerContentContainer p,
+.userSection .plannerContentContainer p,
+.plannerSection .userContentContainer p,
+.userSection .userContentContainer p {
+  width: 45%;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+.userSection {
+  background: #FA80AF;
+  height: 63vh;
 }

@@ -18,8 +18,6 @@
 	.plannerMainTextContainer,
 	.userMainTextContainer{
 		h2{
-			font-size: 3rem;
-			font-weight: bold;
 			text-align: center;
 		}
 
@@ -40,7 +38,7 @@
 		align-items: center;
 
 		.plannerImageContainer,
-		.userImageContianer {
+		.userImageContainer {
 			
 			width: 50%;
 
@@ -62,6 +60,44 @@
 .userSection{
 	background: @pink;
 	height: 63vh;
+	padding: 3rem 0;
 }
 
-// What Are You Waiting For Section
+// 'That It' Section
+
+.completeSection{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 3rem 0;
+	background: @blue;
+
+	.completeMainTextContainer{
+		
+		h2{
+			text-align: center;
+		}
+
+	}
+
+	.completeContentContainer{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 40vh;
+		
+		.completeImageContainer{
+			width: 50%;
+
+			img{
+				max-width: 100%;
+			}
+		}
+
+		p{
+			font-size: 2.5rem;
+			width: 45%;
+			line-height: 1.5;
+		}
+	}
+}

@@ -1,6 +1,9 @@
 # UI-2
 UI 2 Repo
 
+## Deployment
+https://stoic-varahamihira-cfb191.netlify.com/
+
 ## Fonts Used
 
 Google Fonts

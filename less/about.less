@@ -4,6 +4,11 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	padding-top: 8rem;
+
+	@media @mobile{
+		padding-top: 13rem;
+	}
+
 	h2{
 		margin: 2rem 0;
 	}
@@ -26,9 +31,18 @@
 			margin: 2rem;
 			width: 45%;
 
+			@media @mobile{
+				width: 80%;
+			}
+
+
 			.image-container{
 				width: 40%;
 				padding: 2rem 0;
+
+				@media @mobile{
+					width: 50%;
+				}
 
 				img{
 					max-width: 100%;

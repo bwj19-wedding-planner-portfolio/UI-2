@@ -1,12 +1,21 @@
 
+// Main container
 .about-contianer{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	padding-top: 8rem;
+
+	@media @mobile{
+		padding-top: 13rem;
+	}
+
+	// Group Name Header
 	h2{
 		margin: 2rem 0;
 	}
+
+	// All Group Styles
 	.group{
 
 		display: flex;
@@ -16,6 +25,7 @@
 		width: 100%;
 		text-align: center;
 
+		// All Person Styles
 		.person{
 			display: flex;
 			flex-direction: column;
@@ -26,9 +36,19 @@
 			margin: 2rem;
 			width: 45%;
 
+			@media @mobile{
+				width: 80%;
+			}
+
+
+			// Image Styles
 			.image-container{
 				width: 40%;
 				padding: 2rem 0;
+
+				@media @mobile{
+					width: 50%;
+				}
 
 				img{
 					max-width: 100%;
@@ -36,11 +56,13 @@
 				}
 			}
 
+			// Info Text
 			p{
 				font-size: 1.8rem;
 				margin-top: 1rem;
 			}
 
+			// Github Icon Styling
 			i{
 				font-size: 6rem;
 				color: @pink;

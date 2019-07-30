@@ -427,6 +427,11 @@ a {
   justify-content: center;
   padding-top: 8rem;
 }
+@media (max-width: 500px) {
+  .about-contianer {
+    padding-top: 13rem;
+  }
+}
 .about-contianer h2 {
   margin: 2rem 0;
 }
@@ -448,9 +453,19 @@ a {
   margin: 2rem;
   width: 45%;
 }
+@media (max-width: 500px) {
+  .about-contianer .group .person {
+    width: 80%;
+  }
+}
 .about-contianer .group .person .image-container {
   width: 40%;
   padding: 2rem 0;
+}
+@media (max-width: 500px) {
+  .about-contianer .group .person .image-container {
+    width: 50%;
+  }
 }
 .about-contianer .group .person .image-container img {
   max-width: 100%;

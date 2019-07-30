@@ -1,0 +1,431 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  max-width: 95rem;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    max-width: 45rem;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+p {
+  font-family: "Lato", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+#navContainer {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #ECECEC;
+  padding: 2rem 0;
+}
+#navContainer div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  #navContainer div {
+    flex-wrap: wrap;
+  }
+  #navContainer div a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #navContainer div .navItems {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  #navContainer div .navItems a {
+    font-size: 1.5rem;
+  }
+}
+#navContainer div a h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: black;
+}
+#navContainer div nav {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  font-size: 1.8rem;
+}
+#navContainer div nav a {
+  color: black;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+}
+#navContainer div nav a:hover {
+  background: #FA80AF;
+  color: white;
+}
+.header {
+  display: flex;
+  padding-top: 9rem;
+  background: #DCB5F9;
+  height: 50vh;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .container .headerTextContainer {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header .container .headerTextContainer h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.header .container .headerTextContainer p {
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+.header .container .imageContainer {
+  width: 48%;
+}
+.header .container .imageContainer img {
+  max-width: 100%;
+}
+@media (max-width: 500px) {
+  .header {
+    height: 80vh;
+  }
+  .header .container {
+    flex-wrap: wrap;
+    margin-top: 5rem;
+  }
+  .header .container .headerTextContainer {
+    width: 100%;
+  }
+  .header .container .headerTextContainer h2 {
+    text-align: center;
+  }
+  .header .container .headerTextContainer p {
+    text-align: center;
+  }
+  .header .container .imageContainer {
+    width: 100%;
+  }
+}
+.plannerSection {
+  background: #97D1FD;
+}
+.plannerSection,
+.userSection {
+  height: 50vh;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.plannerSection .plannerMainTextContainer h2,
+.userSection .plannerMainTextContainer h2,
+.plannerSection .userMainTextContainer h2,
+.userSection .userMainTextContainer h2 {
+  text-align: center;
+}
+.plannerSection .plannerMainTextContainer p,
+.userSection .plannerMainTextContainer p,
+.plannerSection .userMainTextContainer p,
+.userSection .userMainTextContainer p {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.plannerSection .plannerContentContainer,
+.userSection .plannerContentContainer,
+.plannerSection .userContentContainer,
+.userSection .userContentContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.plannerSection .plannerContentContainer .plannerImageContainer,
+.userSection .plannerContentContainer .plannerImageContainer,
+.plannerSection .userContentContainer .plannerImageContainer,
+.userSection .userContentContainer .plannerImageContainer,
+.plannerSection .plannerContentContainer .userImageContainer,
+.userSection .plannerContentContainer .userImageContainer,
+.plannerSection .userContentContainer .userImageContainer,
+.userSection .userContentContainer .userImageContainer {
+  width: 50%;
+}
+.plannerSection .plannerContentContainer .plannerImageContainer img,
+.userSection .plannerContentContainer .plannerImageContainer img,
+.plannerSection .userContentContainer .plannerImageContainer img,
+.userSection .userContentContainer .plannerImageContainer img,
+.plannerSection .plannerContentContainer .userImageContainer img,
+.userSection .plannerContentContainer .userImageContainer img,
+.plannerSection .userContentContainer .userImageContainer img,
+.userSection .userContentContainer .userImageContainer img {
+  max-width: 100%;
+}
+.plannerSection .plannerContentContainer p,
+.userSection .plannerContentContainer p,
+.plannerSection .userContentContainer p,
+.userSection .userContentContainer p {
+  width: 45%;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+@media (max-width: 500px) {
+  .plannerSection,
+  .userSection {
+    height: 50vh;
+  }
+  .plannerSection .plannerContentContainer,
+  .userSection .plannerContentContainer,
+  .plannerSection .userContentContainer,
+  .userSection .userContentContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .plannerSection .plannerContentContainer .plannerImageContainer,
+  .userSection .plannerContentContainer .plannerImageContainer,
+  .plannerSection .userContentContainer .plannerImageContainer,
+  .userSection .userContentContainer .plannerImageContainer,
+  .plannerSection .plannerContentContainer .userImageContainer,
+  .userSection .plannerContentContainer .userImageContainer,
+  .plannerSection .userContentContainer .userImageContainer,
+  .userSection .userContentContainer .userImageContainer {
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+  .plannerSection .plannerContentContainer p,
+  .userSection .plannerContentContainer p,
+  .plannerSection .userContentContainer p,
+  .userSection .userContentContainer p {
+    display: none;
+  }
+}
+.userSection {
+  background: #FA80AF;
+  height: 63vh;
+  padding: 3rem 0;
+}
+.completeSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 6rem 0;
+  background: #97D1FD;
+}
+.completeSection .completeMainTextContainer {
+  width: 100%;
+}
+.completeSection .completeMainTextContainer h2 {
+  text-align: center;
+}
+.completeSection .completeContentContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40vh;
+}
+.completeSection .completeContentContainer .completeImageContainer {
+  width: 50%;
+}
+.completeSection .completeContentContainer .completeImageContainer img {
+  max-width: 100%;
+}
+.completeSection .completeContentContainer p {
+  font-size: 2.5rem;
+  width: 45%;
+  line-height: 1.5;
+}
+@media (max-width: 500px) {
+  .completeSection .completeContentContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .completeSection .completeContentContainer .completeImageContainer {
+    width: 80%;
+  }
+  .completeSection .completeContentContainer p {
+    width: 100%;
+    text-align: center;
+  }
+}
+footer {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
+  background: #7F7F7F;
+}
+footer p {
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: #ECECEC;
+}

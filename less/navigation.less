@@ -1,0 +1,78 @@
+
+#navContainer{
+	// border: 2px solid red;
+	
+	position: fixed;
+	width: 100%;
+	top: 0;
+	background: @offWhite;
+	padding: 2rem 0;
+
+	div{
+		// border: 2px solid green;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		// Mobile Styles
+		@media @mobile {
+			flex-wrap: wrap;
+
+			a{
+				width: 100%;
+				display: flex;
+				justify-content: center;
+			}
+
+			.navItems{
+				width: 100%;
+				margin-top: 1rem;
+				
+				a{
+					font-size: 1.5rem;
+				}
+			}
+
+		}
+
+		// Name Styling
+		a {
+
+			h1{
+				font-size: 3rem;
+				font-weight: bold;
+				color: black;
+			}
+
+		}
+
+		// Nav Item styling
+		nav{
+			// border: 2px solid orange;
+
+			display: flex;
+			justify-content: space-between;
+			width: 40%;
+			font-size: 1.8rem;
+			
+			a{
+				color: black;
+				padding: 1rem;
+				border-radius: 1rem;
+				font-family: @lato;
+				font-weight: bold;
+				letter-spacing: .15rem;
+				
+
+				&:hover{
+					background: @pink;
+					color: white;
+				}
+			}
+
+		}
+
+	}
+
+}

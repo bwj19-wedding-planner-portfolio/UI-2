@@ -228,14 +228,21 @@ a {
 }
 .header {
   display: flex;
-  padding-top: 9rem;
+  align-items: center;
+  padding-top: 18rem;
+  padding-bottom: 15rem;
   background: #DCB5F9;
-  height: 50vh;
 }
 .header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .header .container {
+    flex-wrap: wrap;
+    margin-top: 5rem;
+  }
 }
 .header .container .headerTextContainer {
   width: 45%;
@@ -243,49 +250,47 @@ a {
   flex-direction: column;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .header .container .headerTextContainer {
+    width: 100%;
+  }
+}
 .header .container .headerTextContainer h2 {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 2rem;
 }
+@media (max-width: 500px) {
+  .header .container .headerTextContainer h2 {
+    text-align: center;
+  }
+}
 .header .container .headerTextContainer p {
   font-size: 2.5rem;
   line-height: 1.5;
 }
-.header .container .imageContainer {
-  width: 48%;
-}
-.header .container .imageContainer img {
-  max-width: 100%;
-}
 @media (max-width: 500px) {
-  .header {
-    height: 80vh;
-  }
-  .header .container {
-    flex-wrap: wrap;
-    margin-top: 5rem;
-  }
-  .header .container .headerTextContainer {
-    width: 100%;
-  }
-  .header .container .headerTextContainer h2 {
-    text-align: center;
-  }
   .header .container .headerTextContainer p {
     text-align: center;
   }
+}
+.header .container .imageContainer {
+  width: 48%;
+}
+@media (max-width: 500px) {
   .header .container .imageContainer {
     width: 100%;
   }
+}
+.header .container .imageContainer img {
+  max-width: 100%;
 }
 .plannerSection {
   background: #97D1FD;
 }
 .plannerSection,
 .userSection {
-  height: 50vh;
-  padding: 3rem 0;
+  padding: 10rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -314,6 +319,15 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .plannerSection .plannerContentContainer,
+  .userSection .plannerContentContainer,
+  .plannerSection .userContentContainer,
+  .userSection .userContentContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .plannerSection .plannerContentContainer .plannerImageContainer,
 .userSection .plannerContentContainer .plannerImageContainer,
 .plannerSection .userContentContainer .plannerImageContainer,
@@ -323,6 +337,19 @@ a {
 .plannerSection .userContentContainer .userImageContainer,
 .userSection .userContentContainer .userImageContainer {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .plannerSection .plannerContentContainer .plannerImageContainer,
+  .userSection .plannerContentContainer .plannerImageContainer,
+  .plannerSection .userContentContainer .plannerImageContainer,
+  .userSection .userContentContainer .plannerImageContainer,
+  .plannerSection .plannerContentContainer .userImageContainer,
+  .userSection .plannerContentContainer .userImageContainer,
+  .plannerSection .userContentContainer .userImageContainer,
+  .userSection .userContentContainer .userImageContainer {
+    width: 80%;
+    margin-bottom: 2rem;
+  }
 }
 .plannerSection .plannerContentContainer .plannerImageContainer img,
 .userSection .plannerContentContainer .plannerImageContainer img,
@@ -343,28 +370,6 @@ a {
   line-height: 1.5;
 }
 @media (max-width: 500px) {
-  .plannerSection,
-  .userSection {
-    height: 50vh;
-  }
-  .plannerSection .plannerContentContainer,
-  .userSection .plannerContentContainer,
-  .plannerSection .userContentContainer,
-  .userSection .userContentContainer {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .plannerSection .plannerContentContainer .plannerImageContainer,
-  .userSection .plannerContentContainer .plannerImageContainer,
-  .plannerSection .userContentContainer .plannerImageContainer,
-  .userSection .userContentContainer .plannerImageContainer,
-  .plannerSection .plannerContentContainer .userImageContainer,
-  .userSection .plannerContentContainer .userImageContainer,
-  .plannerSection .userContentContainer .userImageContainer,
-  .userSection .userContentContainer .userImageContainer {
-    width: 80%;
-    margin-bottom: 2rem;
-  }
   .plannerSection .plannerContentContainer p,
   .userSection .plannerContentContainer p,
   .plannerSection .userContentContainer p,
@@ -374,8 +379,6 @@ a {
 }
 .userSection {
   background: #FA80AF;
-  height: 63vh;
-  padding: 3rem 0;
 }
 .completeSection {
   display: flex;
@@ -395,27 +398,32 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 40vh;
-}
-.completeSection .completeContentContainer .completeImageContainer {
-  width: 50%;
-}
-.completeSection .completeContentContainer .completeImageContainer img {
-  max-width: 100%;
-}
-.completeSection .completeContentContainer p {
-  font-size: 2.5rem;
-  width: 45%;
-  line-height: 1.5;
+  padding: 2rem;
 }
 @media (max-width: 500px) {
   .completeSection .completeContentContainer {
     flex-wrap: wrap;
     justify-content: center;
   }
+}
+.completeSection .completeContentContainer .completeImageContainer {
+  width: 50%;
+}
+@media (max-width: 500px) {
   .completeSection .completeContentContainer .completeImageContainer {
     width: 80%;
   }
+}
+.completeSection .completeContentContainer .completeImageContainer img {
+  max-width: 100%;
+}
+.completeSection .completeContentContainer p {
+  padding-top: 2rem;
+  width: 45%;
+  line-height: 1.5;
+  font-size: 2.5rem;
+}
+@media (max-width: 500px) {
   .completeSection .completeContentContainer p {
     width: 100%;
     text-align: center;

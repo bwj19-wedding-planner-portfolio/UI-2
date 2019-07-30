@@ -6,9 +6,7 @@
 // Planner and User Sections
 .plannerSection,
 .userSection{
-
-	height: 50vh;
-	padding: 3rem 0;
+	padding: 10rem 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -37,10 +35,20 @@
 		justify-content: space-between;
 		align-items: center;
 
+		@media @mobile{
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
 		.plannerImageContainer,
 		.userImageContainer {
 			
 			width: 50%;
+
+			@media @mobile {
+				width: 80%;
+				margin-bottom: 2rem;
+			}
 
 			img{
 				max-width: 100%;
@@ -52,35 +60,17 @@
 			width: 45%;
 			font-size: 2rem;
 			line-height: 1.5;
-		}
-		
-	}
 
-	@media @mobile {
-		height: 50vh;
-
-		.plannerContentContainer,
-		.userContentContainer {
-			flex-wrap: wrap;
-			justify-content: center;
-			.plannerImageContainer,
-			.userImageContainer {
-				width: 80%;
-				margin-bottom: 2rem;
-			}
-
-			p{
+			@media @mobile{
 				display: none;
 			}
 		}
-
+		
 	}
 }
 
 .userSection{
 	background: @pink;
-	height: 63vh;
-	padding: 3rem 0;
 }
 
 
@@ -108,10 +98,19 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		height: 40vh;
+		padding: 2rem;
+
+		@media @mobile{
+			flex-wrap: wrap;
+			justify-content: center;
+		}
 		
 		.completeImageContainer{
 			width: 50%;
+
+			@media @mobile{
+				width: 80%;
+			}
 
 			img{
 				max-width: 100%;
@@ -119,22 +118,13 @@
 		}
 
 		p{
-			font-size: 2.5rem;
+
+			padding-top: 2rem;
 			width: 45%;
 			line-height: 1.5;
-		}
-	}
-
-	@media @mobile{
-		.completeContentContainer{
-			flex-wrap: wrap;
-			justify-content: center;
-
-			.completeImageContainer{
-				width: 80%;
-			}
-
-			p {
+			font-size: 2.5rem;
+			
+			@media @mobile{
 				width: 100%;
 				text-align: center;
 			}

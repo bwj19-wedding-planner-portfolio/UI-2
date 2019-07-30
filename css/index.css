@@ -164,6 +164,10 @@ h2 {
   font-size: 3rem;
   font-weight: bold;
 }
+h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
 p {
   font-family: "Lato", sans-serif;
 }
@@ -416,6 +420,50 @@ a {
     width: 100%;
     text-align: center;
   }
+}
+.about-contianer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 8rem;
+}
+.about-contianer h2 {
+  margin: 2rem 0;
+}
+.about-contianer .group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 2rem;
+  width: 100%;
+  text-align: center;
+}
+.about-contianer .group .person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  background: #ECECEC;
+  border: 2px solid #97D1FD;
+  margin: 2rem;
+  width: 45%;
+}
+.about-contianer .group .person .image-container {
+  width: 40%;
+  padding: 2rem 0;
+}
+.about-contianer .group .person .image-container img {
+  max-width: 100%;
+  border-radius: 1rem;
+}
+.about-contianer .group .person p {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+.about-contianer .group .person i {
+  font-size: 6rem;
+  color: #FA80AF;
+  margin: 2rem 0;
 }
 footer {
   padding: 3rem 0;

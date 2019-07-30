@@ -1,0 +1,54 @@
+
+.about-contianer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-top: 8rem;
+	h2{
+		margin: 2rem 0;
+	}
+	.group{
+
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		padding: 2rem;
+		width: 100%;
+		text-align: center;
+
+		.person{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			border-radius: 1rem;
+			background: @offWhite;
+			border: 2px solid @blue;
+			margin: 2rem;
+			width: 45%;
+
+			.image-container{
+				width: 40%;
+				padding: 2rem 0;
+
+				img{
+					max-width: 100%;
+					border-radius: 1rem;
+				}
+			}
+
+			p{
+				font-size: 1.8rem;
+				margin-top: 1rem;
+			}
+
+			i{
+				font-size: 6rem;
+				color: @pink;
+				margin: 2rem 0;
+			}
+
+			
+		}
+
+	}
+}

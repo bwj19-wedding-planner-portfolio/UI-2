@@ -1,5 +1,5 @@
 # Site Hosting
-https://stoic-varahamihira-cfb191.netlify.com/
+https://fervent-yalow-1663cf.netlify.com/
 
 # UI-2
 Author: Kyle Guerrero

@@ -4,6 +4,9 @@ https://fervent-yalow-1663cf.netlify.com/
 # UI-2
 Author: Kyle Guerrero
 
+## Deployment
+https://stoic-varahamihira-cfb191.netlify.com/
+
 ## Fonts Used
 
 Google Fonts: https://fonts.google.com/
@@ -26,11 +29,12 @@ FontAwesome: https://fontawesome.com/?from=io
 
 			You are not to merge your requests into the master branch ever.
 
+
 ## Preprocssor Setup
 - [ ] Inastall NodeJS: https://nodejs.org/en/download/
 - [ ] Verify node is installed: `node -v`
 - [ ] Install Less: https://www.npmjs.com/package/less-watch-compiler
 - [ ] Verify less is installed: `lessc -v`
 - [ ] Navigate to the root folder of the project using the `cd` command and run `less-watch-compiler less css index.less`
-- [ ] Verify the compiler is running by changing the `background-color` on the `html` selector to `red` in the `index.less` file and save the 				file.
+- [ ] Verify the compiler is running by changing the `background-color` on the `html` selector to `red` in the `index.less` file and save the file.
 - [ ] Once this change happens you are ready to go, you can also delete the `background-color` styling in the index file.

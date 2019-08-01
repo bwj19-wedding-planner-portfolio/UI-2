@@ -15,8 +15,8 @@ Google Fonts: https://fonts.google.com/
 
 ## Icons
 
-UnDraw: https://undraw.co/
-FontAwesome: https://fontawesome.com/?from=io
+- UnDraw: https://undraw.co/
+- FontAwesome: https://fontawesome.com/?from=io
 
 # Project Setup
 

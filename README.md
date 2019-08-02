@@ -10,7 +10,7 @@ Author: Kyle Guerrero
 ## Description
 
 This website is a marketing page for an application in which wedding planners can create a professional looking portfolio to display their work.
-Also visitors to the applicaiton can find the perfect planner for them and get in touch with the wedding planner. This application acts as a medium to bring together wedding planners and newly engaged couples looking for a planner. This website is currently Desktop friendly and mobile friendly as well. And is currently hosted, hosting link can be found at the top of this page.
+Also visitors to the applicaiton can find the perfect planner for them and get in touch with the wedding planner. This application acts as a medium to bring together wedding planners and newly engaged couples looking for a planner. This website is currently desktop friendly and mobile friendly as well. And is currently hosted, hosting link can be found at the top of this page.
 
 ## Fonts Used
 

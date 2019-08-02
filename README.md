@@ -1,6 +1,9 @@
 # Site Hosting 
 https://fervent-yalow-1663cf.netlify.com/
 
+# Product Canvas
+https://docs.google.com/document/d/1HNFdSaILXcbq09cYEpZD6-KrSPIrP0AWfLcTh0LEGIM/edit?pli=1#
+
 # UI-2
 Author: Kyle Guerrero
 
@@ -38,3 +41,18 @@ Google Fonts: https://fonts.google.com/
 - [ ] Navigate to the root folder of the project using the `cd` command and run `less-watch-compiler less css index.less`
 - [ ] Verify the compiler is running by changing the `background-color` on the `html` selector to `red` in the `index.less` file and save the file.
 - [ ] Once this change happens you are ready to go, you can also delete the `background-color` styling in the index file.
+
+
+## Team Members
+
+- UI Developer: Min Huang (https://github.com/huangm96)
+- UI Developer: Kyle Guerrero (https://github.com/AceMouty)
+- Font End Engineer: Dennis Mercado (https://github.com/denmercs)
+- Font End Engineer: Noah Franco (https://github.com/noahfranco)
+- Font End Engineer: Desiree Morris (https://github.com/desiquinn)
+- Advance Front End Engineer: Laura Daugherty (https://github.com/laura-daugherty)
+- Back End Engineer: Chris Carter (https://github.com/ChrisJCarter91)
+
+## Full Project Repo
+
+- https://github.com/bwj19-wedding-planner-portfolio
